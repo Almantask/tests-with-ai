@@ -1,9 +1,9 @@
 namespace UnitTests
 {
-    public class UnitTest1
+    public class AtmTests
     {
         [Fact]
-        public void Test1()
+        public void WithdrawTest()
         {
 
         }
