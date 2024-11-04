@@ -2,5 +2,6 @@
 {
     public interface IBank
     {
+        decimal GetBalance(string v);
     }
 }

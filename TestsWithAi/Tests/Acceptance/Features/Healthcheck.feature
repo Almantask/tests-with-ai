@@ -1,5 +1,3 @@
 ﻿Feature: Healthcheck
 
-Feature: Healthcheck
-
-Scenario: Nothing
+Scenario: Empty
