@@ -1,0 +1,3 @@
+As a user
+I would like to withdraw money from an ATM machine
+So that I can get money in cash
