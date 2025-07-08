@@ -8,6 +8,8 @@ Every iteration of a prompt should do 1 of the 3:
 - Generate code to make all unit tests, including the new test case, pass
 - Refactor the existing code (test suite or source)
 
+After every step in TDD loop, run the impacted test suite.
+
 ## Naming conventions and code layout
 
 For source code apply msdn standards.
