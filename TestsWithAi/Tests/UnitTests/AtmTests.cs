@@ -16,9 +16,8 @@ namespace UnitTests
         }
 
         [Fact]
-        public void Withdraw_WhenAccountHasEnoughMoneyInBank_AndAtmHasEnough_ReturnsBiggestNominals()
+        public void WithdrawWhenAccountHasEnoughMoneyInBankAndAtmHasEnoughReturnsBiggestNominals()
         {
-            // Arrange
             _bankMock.Setup(b => b.GetBalance(It.IsAny<string>())).Returns(15949879);
             _atm.AddNominals(new Dictionary<int, int>
             {
@@ -31,10 +30,8 @@ namespace UnitTests
                 { 1, 700 }
             });
 
-            // Act
             var result = _atm.Withdraw("123456", 1000);
 
-            // Assert
             result.Should().BeEquivalentTo(new Dictionary<int, int>
             {
                 { 100, 10 }
